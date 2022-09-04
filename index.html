@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rode</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primarygold: "#AC9870",
+              secondaryBlue: "#00baf2",
+              secondaryBlueHover: "#0095c2",
+              primaryBlack: "#101010",
+              backgroundcolor: "#e6e6e6",
+            },
+            backgroundImage: {
+              "hovermircophone-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero-7-1.png')",
+              "mircophone-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/hero-7-1.png')",
+              "hovermixer-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero-7-2.jpg')",
+              "mixer-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/hero-7-2.jpg')",
+              "hoversoftware-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero-7-3.png')",
+              "software-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/hero-7-3.png')",
+              "hoveraccessories-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero-7-4.png')",
+              "accessories-pattern":
+                "linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/hero-7-4.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="header sticky top-0 bg-white">
+      <div
+        class="container hidden mx-auto border-b-[1px] lg:flex items-center justify-between py-1 lg:px-16"
+      >
+        <ul class="flex items-center gap-2">
+          <li><ion-icon name="location-outline" class="pt-2"></ion-icon></li>
+          <li><a href="#" class="text-xs">EN</a></li>
+        </ul>
+        <ul>
+          <li><ion-icon name="person-outline"></ion-icon></li>
+        </ul>
+      </div>
+      <div
+        class="container mx-auto px-8 lg:px-16 h-6 md:h-14 xl:h-20 flex flex-row-reverse items-center justify-between"
+      >
+        <div class="search">
+          <button class="">
+            <ion-icon
+              class="w-6 h-6 md:w-8 md:h-8"
+              name="search-outline"
+            ></ion-icon>
+          </button>
+        </div>
+        <div class="logo lg:order-last">
+          <a href="#">
+            <img src="assets/RODE-logo.png" class="w-20 md:w-28" alt=""
+          /></a>
+        </div>
+
+        <nav class="nav-bar hidden lg:block">
+          <ul class="main-list flex gap-8">
+            <li><a class="uppercase" href="#">Product</a></li>
+            <li><a class="uppercase" href="#">User Guides</a></li>
+            <li><a class="uppercase" href="#">Solution</a></li>
+            <li><a class="uppercase" href="#">Apparel</a></li>
+            <li><a class="uppercase" href="#">Support</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu lg:hidden">
+          <button class="bg-transparent">
+            <ion-icon
+              class="w-6 h-6 md:w-8 md:h-8"
+              name="menu-outline"
+            ></ion-icon>
+            <ion-icon
+              class="w-6 h-6 md:w-8 md:h-8 hidden"
+              name="close-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header end -->
+
+    <!-- Hero section start -->
+    <section class="hero-section lg:bg-[url('assets/hero-1.jpg')] lg:h-[600px]">
+      <div
+        class="hero mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-16 lg:items-center"
+      >
+        <div class="left-section">
+          <div class="img lg:hidden">
+            <img src="assets/hero-1-.jpg " class="w-[100%]" alt="" />
+          </div>
+        </div>
+        <div
+          class="right-section bg-black lg:bg-transparent px-4 lg:mt-48 lg:pr-32"
+        >
+          <div class="contianer mx-auto">
+            <img src="assets/RODECasterProII_PL_PI_01.svg" alt="" />
+          </div>
+          <div class="hero-content mx-auto mt-6 text-center">
+            <h1 class="text-white text-xl font-bold">The Revolution Is Here</h1>
+            <p
+              class="text-gray-500 text-left md:text-center text-base mt-4 mb-8"
+            >
+              The RØDECaster Pro II is the world's most powerful all-in-one
+              audio solution for streamers, podcasters, musicians, and creators.
+              Take your content to the next level.
+            </p>
+            <div class="button-group pb-8">
+              <a href="#" class="text-primarygold">
+                <span class="inline-flex">
+                  <span class="uppercase">Learn more</span>
+                  <span class="mt-[2px]">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class=""
+                    ></ion-icon>
+                  </span>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="text-white text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+              >
+                Buy now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end  -->
+    <!-- Headphone section -->
+    <section
+      class="headphone bg-cover lg:bg-[url('assets/hero-2.jpg')] lg:h-[100%]"
+    >
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center justify-center"
+      >
+        <div class="left-section py-8">
+          <div class="left-content lg:my-44 text-center lg:pl-32">
+            <svg
+              class=""
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 510 42"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #231f20;
+                  }
+                  .cls-2 {
+                    fill: #ad9970;
+                  }
+                  .cls-3 {
+                    fill: none;
+                  }
+                </style>
+              </defs>
+              <path
+                class="cls-1"
+                d="M142.69.69h12.16l17.27,28.23h.12V.69h8.95V41.31H169.48L151.75,12.39h-.11V41.31h-8.95Z"
+                transform="translate(0 0)"
+              />
+              <path
+                class="cls-1"
+                d="M192.72,8.61H181.13V.69h32.13V8.61H201.67v32.7h-8.95Z"
+                transform="translate(0 0)"
+              />
+              <path
+                class="cls-1"
+                d="M218.37.69h8.95V15.84H244.7V.69h9V41.31h-9V23.75H227.32V41.31h-8.95Z"
+                transform="translate(0 0)"
+              />
+              <path
+                class="cls-1"
+                d="M273.91,25.58H259.79V18.7h14.12Z"
+                transform="translate(0 0)"
+              />
+              <path
+                class="cls-2"
+                d="M289,10.33l-8.14,7.17L276,11.88,289.22.69h8V41.31H289Z"
+                transform="translate(0 0)"
+              />
+              <path
+                class="cls-2"
+                d="M302.59,21a42,42,0,0,1,.66-7.34,21.63,21.63,0,0,1,2.35-6.77,14,14,0,0,1,4.62-5,15.45,15.45,0,0,1,14.92,0,14,14,0,0,1,4.62,5,21.38,21.38,0,0,1,2.35,6.77,41.14,41.14,0,0,1,0,14.68,21.38,21.38,0,0,1-2.35,6.77,14,14,0,0,1-4.62,5,15.45,15.45,0,0,1-14.92,0,14,14,0,0,1-4.62-5,21.63,21.63,0,0,1-2.35-6.77A42,42,0,0,1,302.59,21Zm8.61,0c0,1.07.05,2.35.14,3.84a19.08,19.08,0,0,0,.78,4.31,9.21,9.21,0,0,0,1.92,3.5,5.32,5.32,0,0,0,7.26,0,9,9,0,0,0,1.95-3.5,18.53,18.53,0,0,0,.77-4.31q.15-2.23.15-3.84T324,17.16a18.53,18.53,0,0,0-.77-4.31,9,9,0,0,0-1.95-3.5,5.32,5.32,0,0,0-7.26,0,9.21,9.21,0,0,0-1.92,3.5,19.08,19.08,0,0,0-.78,4.31C311.25,18.65,311.2,19.93,311.2,21Z"
+                transform="translate(0 0)"
+              />
+              <path
+                class="cls-2"
+                d="M337.13,21a42,42,0,0,1,.66-7.34,21.39,21.39,0,0,1,2.36-6.77,13.9,13.9,0,0,1,4.61-5,15.45,15.45,0,0,1,14.92,0,14,14,0,0,1,4.62,5,21.38,21.38,0,0,1,2.35,6.77,41.14,41.14,0,0,1,0,14.68,21.38,21.38,0,0,1-2.35,6.77,14,14,0,0,1-4.62,5,15.45,15.45,0,0,1-14.92,0,13.9,13.9,0,0,1-4.61-5,21.39,21.39,0,0,1-2.36-6.77A42,42,0,0,1,337.13,21Zm8.61,0c0,1.07.05,2.35.14,3.84a19.08,19.08,0,0,0,.78,4.31,9.21,9.21,0,0,0,1.92,3.5,5.32,5.32,0,0,0,7.26,0,9,9,0,0,0,2-3.5,18.53,18.53,0,0,0,.77-4.31q.15-2.23.15-3.84t-.15-3.84a18.53,18.53,0,0,0-.77-4.31,9,9,0,0,0-2-3.5,5.32,5.32,0,0,0-7.26,0,9.21,9.21,0,0,0-1.92,3.5,19.08,19.08,0,0,0-.78,4.31C345.79,18.65,345.74,19.93,345.74,21Z"
+                transform="translate(0 0)"
+              />
+              <rect class="cls-3" width="510" height="42" />
+            </svg>
+            <div class="headphone-content mx-auto mt-6 text-center">
+              <h1 class="text-black text-xl font-bold">
+                Your Search For The Perfect Headphones Is Over
+              </h1>
+              <p
+                class="text-gray-500 text-left md:text-center text-base mt-4 mb-8"
+              >
+                Experience sound like never before with the NTH-100s.
+                Exceptional sonic performance, superior comfort and iconic looks
+                that inspires creativity.
+              </p>
+              <div class="button-group pb-8">
+                <a href="#" class="text-primarygold">
+                  <span class="inline-flex">
+                    <span class="uppercase">Learn more</span>
+                    <span class="mt-[2px]">
+                      <ion-icon
+                        name="chevron-forward-outline"
+                        class=""
+                      ></ion-icon>
+                    </span>
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="text-white text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+                >
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section hidden"></div>
+      </div>
+    </section>
+
+    <!-- Headphone section end -->
+    <!-- Recording section start -->
+    <section
+      class="recoding-section bg-cover lg:bg-[url('assets/hero-3.jpg')] lg:h-[100%]"
+    >
+      <div class="contianer mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-8">
+        <div class="left-section">
+          <img src="assets/hero-3-.jpg" class="lg:hidden w-[100%]" alt="" />
+        </div>
+        <div class="right-section">
+          <div class="right-content px-4 py-8 lg:pr-32">
+            <div class="right-content lg:my-44 text-center">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 540 42"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #231f20;
+                    }
+                    .cls-2 {
+                      fill: #b79b6e;
+                    }
+                    .cls-3 {
+                      fill: none;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M176.52,1h12l17,27.77h.11V1h8.81V41H202.88L185.44,12.53h-.12V41h-8.8Z"
+                  transform="translate(0 0)"
+                />
+                <path
+                  class="cls-1"
+                  d="M225.6,8.81H214.19V1h31.62V8.81H234.4V41h-8.8Z"
+                  transform="translate(0 0)"
+                />
+                <path
+                  class="cls-2"
+                  d="M254.76,25.54H240.87V18.77h13.89Z"
+                  transform="translate(0 0)"
+                />
+                <path
+                  class="cls-2"
+                  d="M294.33,25.57a19.15,19.15,0,0,1-1.07,6.55,14.23,14.23,0,0,1-3.19,5.19,14.6,14.6,0,0,1-5.28,3.45A19.73,19.73,0,0,1,277.51,42a20,20,0,0,1-7.34-1.24,14.64,14.64,0,0,1-5.27-3.45,14.1,14.1,0,0,1-3.19-5.19,19.15,19.15,0,0,1-1.08-6.55V1h8.81V25.23a9.88,9.88,0,0,0,.59,3.45,8.37,8.37,0,0,0,1.67,2.74,7.46,7.46,0,0,0,2.57,1.8,8.08,8.08,0,0,0,3.24.65,7.92,7.92,0,0,0,3.22-.65,7.53,7.53,0,0,0,2.54-1.8,8.54,8.54,0,0,0,1.67-2.74,9.88,9.88,0,0,0,.59-3.45V1h8.8Z"
+                  transform="translate(0 0)"
+                />
+                <path
+                  class="cls-2"
+                  d="M320.7,10.78a6.32,6.32,0,0,0-2.91-2,10.47,10.47,0,0,0-3.47-.65,8.61,8.61,0,0,0-2,.23,7.47,7.47,0,0,0-1.92.7A4.09,4.09,0,0,0,309,10.33a3.21,3.21,0,0,0-.57,1.92A3.18,3.18,0,0,0,309.75,15a12.74,12.74,0,0,0,3.41,1.63c1.37.45,2.85.91,4.43,1.36A18.06,18.06,0,0,1,322,19.93a10.46,10.46,0,0,1,3.42,3.33,10.16,10.16,0,0,1,1.35,5.59,12.79,12.79,0,0,1-1.24,5.81,11.79,11.79,0,0,1-3.36,4.12,14.3,14.3,0,0,1-4.91,2.43,22.47,22.47,0,0,1-13.12-.4A18.22,18.22,0,0,1,298,37l6.26-6.89a9.11,9.11,0,0,0,3.42,2.79,9.7,9.7,0,0,0,4.26,1,9.51,9.51,0,0,0,2.17-.25,7.28,7.28,0,0,0,2-.76,4.41,4.41,0,0,0,1.41-1.3,3.24,3.24,0,0,0,.54-1.87,3.37,3.37,0,0,0-1.39-2.85,12.94,12.94,0,0,0-3.47-1.78c-1.39-.48-2.9-1-4.51-1.46a20.18,20.18,0,0,1-4.52-2,10.94,10.94,0,0,1-3.47-3.27A9.42,9.42,0,0,1,299.25,13a12,12,0,0,1,1.27-5.64,12.25,12.25,0,0,1,3.38-4.07A14.6,14.6,0,0,1,308.79.82a19.79,19.79,0,0,1,5.7-.82A22.42,22.42,0,0,1,321,1a15.15,15.15,0,0,1,5.7,3.22Z"
+                  transform="translate(0 0)"
+                />
+                <path
+                  class="cls-2"
+                  d="M332.09,1H347a38.38,38.38,0,0,1,5.22.36,14.44,14.44,0,0,1,4.71,1.47,9,9,0,0,1,3.39,3.08,9.41,9.41,0,0,1,1.3,5.25,8.35,8.35,0,0,1-1.89,5.61,10.38,10.38,0,0,1-5,3.19v.12a11.41,11.41,0,0,1,3.59,1.1,9.41,9.41,0,0,1,2.76,2.09,8.77,8.77,0,0,1,1.78,3,10.49,10.49,0,0,1,.62,3.61,9.63,9.63,0,0,1-1.35,5.28,10.79,10.79,0,0,1-3.5,3.42,15.57,15.57,0,0,1-4.83,1.86,25.61,25.61,0,0,1-5.33.56H332.09Zm8.81,16h6.38a9,9,0,0,0,2-.22,5.54,5.54,0,0,0,1.78-.74,3.83,3.83,0,0,0,1.27-1.35,4.06,4.06,0,0,0,.48-2,3.73,3.73,0,0,0-.53-2.06,3.79,3.79,0,0,0-1.39-1.28A6.48,6.48,0,0,0,349,8.67a10.79,10.79,0,0,0-2.09-.2h-6Zm0,16.54h7.9a9.69,9.69,0,0,0,2.06-.22,5.62,5.62,0,0,0,1.9-.79,4.63,4.63,0,0,0,1.38-1.47,4.22,4.22,0,0,0,.53-2.2,3.54,3.54,0,0,0-.7-2.29,4.57,4.57,0,0,0-1.78-1.33,9.46,9.46,0,0,0-2.31-.62,17.74,17.74,0,0,0-2.32-.17H340.9Z"
+                  transform="translate(0 0)"
+                />
+                <rect class="cls-3" width="540" height="42" />
+              </svg>
+              <div class="headphone-content mx-auto mt-6 text-center">
+                <h1 class="text-black text-xl font-bold">
+                  Studio-Quality Recording, Made Simple
+                </h1>
+                <p
+                  class="text-gray-500 text-left md:text-center text-base mt-4 mb-8"
+                >
+                  The NT-USB is a studio-quality USB condenser microphone that
+                  offers impeccable audio, elegant looks and premium features,
+                  all in an easy-to-use form factor, the NT-USB will have you
+                  sounding like a pro in seconds.
+                </p>
+                <div class="button-group pb-8">
+                  <a href="#" class="text-primarygold">
+                    <span class="inline-flex">
+                      <span class="uppercase">Learn more</span>
+                      <span class="mt-[2px]">
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          class=""
+                        ></ion-icon>
+                      </span>
+                    </span>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-white text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+                  >
+                    Buy now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recording section end -->
+
+    <!-- mic section -->
+    <section class="mic bg-cover lg:bg-[url('assets/hero-4.jpg')] lg:h-[100%]">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center justify-center"
+      >
+        <div class="left-section py-8">
+          <div class="left-content lg:my-44 text-center lg:pl-32">
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 540 72"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #231f20;
+                  }
+                  .cls-2 {
+                    fill: #ad9970;
+                  }
+                </style>
+              </defs>
+              <path
+                class="cls-1"
+                d="M158.32,31H173a28.2,28.2,0,0,1,5.79.56,13.07,13.07,0,0,1,4.76,1.95,9.76,9.76,0,0,1,3.23,3.72,12.88,12.88,0,0,1,1.2,5.9A13.62,13.62,0,0,1,186.83,49a9.66,9.66,0,0,1-3.06,3.79,12.29,12.29,0,0,1-4.62,2,26.17,26.17,0,0,1-5.79.59H167V71h-8.69ZM167,48h5.79a11.39,11.39,0,0,0,2.26-.22A6,6,0,0,0,177,47a4,4,0,0,0,1.4-1.46,4.71,4.71,0,0,0,.53-2.35,4,4,0,0,0-.7-2.45,4.62,4.62,0,0,0-1.78-1.44,7.47,7.47,0,0,0-2.45-.69c-.9-.09-1.75-.14-2.57-.14H167Z"
+              />
+              <path
+                class="cls-1"
+                d="M191.29,51a23.07,23.07,0,0,1,1.58-8.69,19.21,19.21,0,0,1,4.43-6.64,19.52,19.52,0,0,1,6.7-4.2,25.43,25.43,0,0,1,17,0,19.48,19.48,0,0,1,6.74,4.2,19.21,19.21,0,0,1,4.43,6.64,24.12,24.12,0,0,1,.08,17.38,19.21,19.21,0,0,1-4.43,6.64,19.78,19.78,0,0,1-6.74,4.2,25.43,25.43,0,0,1-17,0,19.78,19.78,0,0,1-6.74-4.2,19.21,19.21,0,0,1-4.43-6.64A22.91,22.91,0,0,1,191.29,51Zm9,0a14.93,14.93,0,0,0,.86,5.17,11.79,11.79,0,0,0,2.48,4.06,11.41,11.41,0,0,0,3.87,2.68,13.71,13.71,0,0,0,10.08,0,11.41,11.41,0,0,0,3.87-2.68A12,12,0,0,0,224,56.17a14.93,14.93,0,0,0,.86-5.17,15.24,15.24,0,0,0-.86-5.14,11.76,11.76,0,0,0-2.48-4.09,11.27,11.27,0,0,0-3.87-2.68,13.71,13.71,0,0,0-10.08,0,11.27,11.27,0,0,0-3.87,2.68,11.76,11.76,0,0,0-2.48,4.09,15,15,0,0,0-.91,5.14Z"
+              />
+              <path
+                class="cls-1"
+                d="M239.73,31h13a36.39,36.39,0,0,1,9,1.07,20.25,20.25,0,0,1,7.43,3.47,16.88,16.88,0,0,1,5,6.24A21.15,21.15,0,0,1,276,51.09a19.33,19.33,0,0,1-1.81,8.56,18.51,18.51,0,0,1-4.87,6.2,21.32,21.32,0,0,1-7.08,3.81,27.3,27.3,0,0,1-8.41,1.3h-14.2Zm8.69,31.83h4.51a23.51,23.51,0,0,0,5.6-.62,11.73,11.73,0,0,0,4.47-2,9.8,9.8,0,0,0,3-3.78,13.73,13.73,0,0,0,1.09-5.73A11.25,11.25,0,0,0,266,45.55,10.07,10.07,0,0,0,263.07,42a12.9,12.9,0,0,0-4.32-2.12,19.13,19.13,0,0,0-5.21-.7h-5.12Z"
+              />
+              <path
+                class="cls-2"
+                d="M282,31h13.14l9.08,26.08h.11L313.46,31h13.09V71h-8.69V40.33h-.11L307.39,71h-6.62l-10-30.65h-.11V71H282Z"
+              />
+              <path class="cls-2" d="M331.67,31h8.69V71h-8.69Z" />
+              <path
+                class="cls-2"
+                d="M374.05,41.4A8.52,8.52,0,0,0,370.9,39a10.31,10.31,0,0,0-4.31-.85,11,11,0,0,0-8.16,3.68,12.78,12.78,0,0,0-2.4,4.09,15.24,15.24,0,0,0-.86,5.14,14.93,14.93,0,0,0,.86,5.17,13.16,13.16,0,0,0,2.37,4.06A10.71,10.71,0,0,0,361.94,63a10,10,0,0,0,4.37,1A9.63,9.63,0,0,0,371,62.74a9.37,9.37,0,0,0,3.4-3.16l7.24,5.48a15.17,15.17,0,0,1-6.35,5.25A19.6,19.6,0,0,1,367.42,72a24,24,0,0,1-8.52-1.47,19.78,19.78,0,0,1-6.74-4.2,19,19,0,0,1-4.42-6.64A22.89,22.89,0,0,1,346.15,51a22.85,22.85,0,0,1,1.59-8.69,19,19,0,0,1,4.42-6.64,19.48,19.48,0,0,1,6.74-4.2A24,24,0,0,1,367.42,30a19.33,19.33,0,0,1,3.48.31,18.37,18.37,0,0,1,3.57,1,15.42,15.42,0,0,1,3.37,1.81,13.28,13.28,0,0,1,2.89,2.76Z"
+              />
+              <!-- Code injected by live-server -->
+            </svg>
+            <div class="headphone-content mx-auto mt-6 text-center">
+              <h1 class="text-black lg:text-white text-xl font-bold">
+                Your Search For The Perfect Headphones Is Over
+              </h1>
+              <p
+                class="text-gray-500 lg:text-gray-200 text-left md:text-center text-base mt-4 mb-8"
+              >
+                Experience sound like never before with the NTH-100s.
+                Exceptional sonic performance, superior comfort and iconic looks
+                that inspires creativity.
+              </p>
+              <div class="button-group pb-8">
+                <a href="#" class="text-primarygold">
+                  <span class="inline-flex">
+                    <span class="uppercase">Learn more</span>
+                    <span class="mt-[2px]">
+                      <ion-icon
+                        name="chevron-forward-outline"
+                        class=""
+                      ></ion-icon>
+                    </span>
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="text-white text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+                >
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section row-start-1 lg:col-start-2">
+          <img src="assets/hero-4-.jpg" class="w-[100%] lg:hidden" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- mic section end -->
+    <section class="range pt-8 px-8 md:px-16 lg:px-32">
+      <h1
+        class="text-xl md:text-2xl lg:text-4xl font-bold text-center text-gray-600 py-4"
+      >
+        Explore The RØDE Range
+      </h1>
+      <div class="container mx-auto my-8">
+        <div
+          class="microphones text-center py-8 sm:py-10 md:py-16 lg:py-24 my-4 bg-mircophone-pattern hover:bg-hovermircophone-pattern bg-no-repeat bg-cover transition-all"
+        >
+          <h1
+            class="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-white uppercase"
+          >
+            microphones
+          </h1>
+        </div>
+
+        <div
+          class="microphones text-center py-8 sm:py-10 md:py-16 lg:py-24 my-8 bg-mixer-pattern hover:bg-hovermixer-pattern bg-no-repeat bg-cover transition-all"
+        >
+          <h1
+            class="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-white uppercase"
+          >
+            Interfaces & Mixers
+          </h1>
+        </div>
+        <div
+          class="microphones text-center py-8 sm:py-10 md:py-16 lg:py-24 my-8 bg-software-pattern hover:bg-hoversoftware-pattern bg-no-repeat bg-cover transition-all"
+        >
+          <h1
+            class="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-white uppercase"
+          >
+            Software
+          </h1>
+        </div>
+        <div
+          class="microphones text-center py-8 sm:py-10 md:py-16 lg:py-24 my-8 bg-accessories-pattern hover:bg-hoveraccessories-pattern bg-no-repeat bg-cover transition-all"
+        >
+          <h1
+            class="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-white uppercase"
+          >
+            Accessories
+          </h1>
+        </div>
+
+        <div class="bloghead">
+          <h1
+            class="text-xl md:text-2xl lg:text-4xl font-bold text-center text-primarygold pt-4"
+          >
+            Latest From The RØDE Blog
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs py-8 px-8 md:px-16 lg:px-32 bg-slate-100">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-8">
+        <div class="card text-center bg-white flex flex-col gap-4 pb-8">
+          <h1 class="text-xl sm:text-2xl md:text-3xl p-4">
+            XLR vs USB Microphones: Which is Best for you?
+          </h1>
+          <img src="assets/thumbnail2.jpg" alt="" />
+          <p class="text-xs md:text-base">
+            We explore the differences between XLR and USB microphones, the
+            advantages of each and which type is best suited to your needs.
+          </p>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="text-white mt-auto text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="card text-center bg-white flex flex-col gap-4 pb-8">
+          <h1 class="text-xl sm:text-2xl md:text-3xl p-4">
+            The Difference Between Large-Diaphragm and Small-Diaphragm Condenser
+            Microphones
+          </h1>
+          <img src="assets/hero-8-1.jpeg" alt="" />
+          <p class="text-xs md:text-base">
+            We explore the difference between large- and small-diaphragm
+            condenser microphones, and what each is best used for.
+          </p>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="text-white mt-auto text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="card text-center bg-white flex flex-col gap-4 pb-8">
+          <h1 class="text-xl sm:text-2xl md:text-3xl p-4">
+            What is a Condenser Microphone and When to Use One
+          </h1>
+          <img src="assets/hero-8-2.jpg" alt="" />
+          <p class="text-xs md:text-base">
+            Learn more about the different types of condenser mics, how they
+            work and the best applications for using them.
+          </p>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="text-white mt-auto text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="card text-center bg-white flex flex-col gap-4 pb-8">
+          <h1 class="text-xl sm:text-2xl md:text-3xl p-4">
+            Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now
+          </h1>
+          <img src="assets/hero-8-3.jpg" alt="" />
+          <p class="text-xs md:text-base">
+            Firmware version 1.0.7 includes key feature additions, such as
+            custom routing for USB and Bluetooth outputs, and more.
+          </p>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="text-white mt-auto text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer px-8 sm:px-16 lg:px-32 pt-16">
+      <div
+        class="container mx-auto border-solid border-b-[1px] border-gray-300 pt-4"
+      ></div>
+      <div
+        class="container mx-auto grid grid-cols-1 lg:grid-cols-4 pb-8 lg:gap-4 border-b-[1px] border-gray-300"
+      >
+        <div class="footer-logo py-8 text-center">
+          <svg
+            class="mx-auto w-18 lg:mx-0"
+            width="142"
+            height="85"
+            viewBox="0 0 142 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M32.1956 12.4956C32.1956 5.40099 25.2314 1.01955 18.7856 1.01955H0V38.6663H11.2363V20.4833L19.8976 38.3714L20.0397 38.6663H32.7975L23.8938 22.8257C29.027 21.3343 32.1956 17.3994 32.1956 12.4956ZM11.2363 6.46265H14.5302C18.1168 6.46265 20.6249 9.01568 20.6249 12.6641C20.6249 17.9471 17.6319 18.9835 12.4485 18.9835H11.2279V6.46265H11.2363Z"
+                fill="black"
+              />
+              <path
+                d="M128.348 32.6502V22.337H140.57V16.3293H128.348V7.02718H142V1.01955H117.12V38.6663H141.916V32.6502H128.348Z"
+                fill="black"
+              />
+              <path
+                d="M94.0371 1.01955H77.4836V38.6663H95.7175C106.895 38.6663 114.119 31.5464 114.119 20.517C114.11 9.2179 105.666 1.01955 94.0371 1.01955ZM102.498 19.0509C102.498 26.0443 99.7304 33.5096 91.9553 33.5096H88.2016V6.16774H91.5624C99.1201 6.16774 102.498 12.6388 102.498 19.0509Z"
+                fill="black"
+              />
+              <path
+                d="M73.5541 3.56414L70.4273 0.412867L66.59 4.28033C63.1957 1.59249 58.8901 0 54.1331 0C42.9971 0 34.2773 8.71233 34.2773 19.8429C34.2773 24.654 35.9076 29.0186 38.6665 32.4143L34.8876 36.2227L38.0144 39.374L41.8351 35.5234C45.1959 38.1354 49.4513 39.6858 54.1331 39.6858C65.269 39.6858 73.9888 30.9734 73.9888 19.8429C73.9888 15.0991 72.4004 10.8019 69.7167 7.42318L73.5541 3.56414ZM54.1331 4.92912C57.611 4.92912 59.6342 7.21253 60.813 10.0942L46.2326 24.7889C45.9651 22.9099 45.8982 21.132 45.8982 19.8429C45.8898 15.3603 46.6924 4.92912 54.1331 4.92912ZM62.067 15.1328C62.3095 16.9275 62.368 18.6043 62.368 19.8429C62.368 24.3254 61.5654 34.7566 54.1247 34.7566C50.7221 34.7566 48.7156 32.5743 47.5284 29.777L62.067 15.1328Z"
+                fill="black"
+              />
+              <path
+                d="M71.4085 84.984C80.6079 84.7558 87.8821 77.0547 87.6557 67.7832C87.4293 58.5116 79.7882 51.1804 70.5887 51.4086C61.3892 51.6367 54.1151 59.3378 54.3415 68.6094C54.5678 77.881 62.209 85.2121 71.4085 84.984Z"
+                fill="#AD9970"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="142" height="85" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div
+          class="footer-nav grid grid-cols-1 sm:grid-cols-3 lg:gap-x-16 lg:gap-y-2 lg:pt-8 lg:col-span-2"
+        >
+          <div
+            class="nav-head border-solid border-t-[1px] border-gray-300 sm:border-none sm:row-span-2"
+          >
+            <div class="nav-top flex items-center py-2 justify-between">
+              <h1 class="text-base sm:text-xl font-bold">Products</h1>
+              <button class="bg-none sm:hidden">
+                <ion-icon
+                  class="add w-6 h-6"
+                  id="add"
+                  name="add-outline"
+                ></ion-icon>
+                <ion-icon
+                  class="minus w-6 h-6 hidden"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+            </div>
+            <ul class="footer-list pl-4 hidden sm:block sm:pl-0">
+              <li class="py-2"><a href="#">Microphones</a></li>
+              <li class="py-2"><a href="#">Headphones</a></li>
+              <li class="py-2"><a href="#">Interfaces ans Mixers</a></li>
+              <li class="py-2"><a href="#">Accessories</a></li>
+              <li class="py-2"><a href="#">Software</a></li>
+              <li class="py-2"><a href="#">Apparel</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-head border-solid border-t-[1px] border-gray-300 sm:border-none sm:row-span-2"
+          >
+            <div class="nav-top flex items-center py-2 justify-between">
+              <h1 class="text-base sm:text-xl font-bold">Support</h1>
+              <button class="bg-none sm:hidden">
+                <ion-icon
+                  class="add w-6 h-6"
+                  id="add"
+                  name="add-outline"
+                ></ion-icon>
+                <ion-icon
+                  class="minus w-6 h-6 hidden"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+            </div>
+            <ul class="footer-list pl-4 hidden sm:block sm:pl-0">
+              <li class="py-2"><a href="#">Contact RØDE</a></li>
+              <li class="py-2"><a href="#">Service Centre</a></li>
+              <li class="py-2"><a href="#">Warranty</a></li>
+              <li class="py-2"><a href="#">Where to Buy</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-head border-solid border-t-[1px] border-gray-300 sm:border-none"
+          >
+            <div class="nav-top flex items-center py-2 justify-between">
+              <h1 class="text-base sm:text-xl font-bold">Company</h1>
+              <button class="bg-none sm:hidden">
+                <ion-icon
+                  class="add w-6 h-6"
+                  id="add"
+                  name="add-outline"
+                ></ion-icon>
+                <ion-icon
+                  class="minus w-6 h-6 hidden"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+            </div>
+            <ul class="footer-list pl-4 hidden sm:block sm:pl-0">
+              <li class="py-2"><a href="#">About RØDE</a></li>
+              <li class="py-2"><a href="#">News and Info</a></li>
+              <li class="py-2"><a href="#">Job Opportunities</a></li>
+            </ul>
+          </div>
+          <div
+            class="nav-head border-solid border-t-[1px] border-b-[1px] border-gray-300 sm:border-none"
+          >
+            <div class="nav-top flex items-center py-2 justify-between">
+              <h1 class="text-base sm:text-xl font-bold">Account</h1>
+              <button class="bg-none sm:hidden">
+                <ion-icon
+                  class="add w-6 h-6"
+                  id="add"
+                  name="add-outline"
+                ></ion-icon>
+                <ion-icon
+                  class="minus w-6 h-6 hidden"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+            </div>
+            <ul class="footer-list pl-4 hidden sm:block sm:pl-0">
+              <li class="py-2"><a href="#">Manage your Account</a></li>
+              <li class="py-2"><a href="#">Create Account</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer-button pt-8 text-center lg:text-right flex flex-col gap-8"
+        >
+          <h1 class="text-xl font-bold sm:text-2xl">
+            Subscribe to our latest news and offers
+          </h1>
+          <div class="">
+            <a
+              href="#"
+              class="text-white mt-auto text-base bg-primarygold uppercase px-6 py-2 rounded-full"
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container mx-auto py-8 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:8 items-center"
+      >
+        <div class="container mx-auto text-center order-last lg:order-first">
+          <p class="text-xs sm:text-base">
+            &#169;2022 RØDE All Rights Reserved.
+          </p>
+        </div>
+        <div class="container mx-auto text-center">
+          <p class="text-xs sm:text-base">
+            Privacy Policy | Terms & Conditions
+          </p>
+        </div>
+        <div class="container mx-auto text-center">
+          <ul class="flex items-center justify-center gap-8">
+            <li>
+              <ion-icon
+                class="w-6 h-6 text-primarygold"
+                name="logo-facebook"
+              ></ion-icon>
+            </li>
+            <li>
+              <ion-icon
+                class="w-6 h-6 text-primarygold"
+                name="logo-twitter"
+              ></ion-icon>
+            </li>
+            <li>
+              <ion-icon
+                class="w-6 h-6 text-primarygold"
+                name="logo-instagram"
+              ></ion-icon>
+            </li>
+            <li>
+              <ion-icon
+                class="w-6 h-6 text-primarygold"
+                name="logo-youtube"
+              ></ion-icon>
+            </li>
+            <li>
+              <ion-icon
+                class="w-6 h-6 text-primarygold"
+                name="musical-note-outline"
+              ></ion-icon>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+  </body>
+</html>
